@@ -1,0 +1,290 @@
+.four{
+	width: 100%;
+	height: 100%;
+    padding-bottom: 20px;
+	background-color : #444b69;
+}
+.four h1{
+	padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: -1px 3px #313131, 3px 3.5px #313131, -1px -1.5px #313131, 3.5px 0px #313131;
+    color: #fbcf3a;
+    letter-spacing: 1.5px;
+    font-family: 'rd_chulajaruekregular';
+}
+.four h2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: -1px 3px #313131, 3px 3.5px #313131, -1px -1.5px #313131, 3.5px 0px #313131;
+    color: #fbcf3a;
+    letter-spacing: 2px;
+    font-family: 'VT323', monospace;
+ }
+.box-list{
+	font-size: 15pt;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 10px;
+}
+.box-list ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.box-list ul li.active{
+    background: #fbcf3a;
+    box-shadow: 0px 0px #fff, 5px 4px #ddb22f, 0px 0px #fff, 4px 4px #ddb22f;
+    border: 2px solid #fbcf3a;
+}
+.box-list ul li{
+	list-style: none;
+    box-shadow: -4px 0px #f8e48f, 0px 4px #ddb22f, 0px -4px #f8e48f, 4px 0px #ddb22f ;
+	background: #fbcf3a;
+	padding: 5px 7px;
+	margin: 14px;
+	cursor: pointer;
+	font-weight: 500;
+	font-family: 'VT323', monospace;
+}
+.card .btn-read {
+    margin: 10px 0px;
+    text-decoration: none;
+    display: inline-flex;
+}
+.btn-read button{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 1000;
+    font-size: 11pt;
+    color: #492E36;
+	padding: 0.1rem 0.7rem;
+	background: #fbcf3a;
+	border: 3px solid #f8e48f;
+	box-shadow: -4px 0px #f8e48f, 0px 4px #ddb22f, 0px -4px #f8e48f, 4px 0px #ddb22f;
+	transform-style: preserve-3d;
+	transition: background 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), background 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), background 150ms cubic-bezier(0,0,0.58,1);
+}
+.btn-read button::before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 3px;
+	background: #ebbd29;
+	box-shadow: -3px 0px #f8e48f, 0px 3px #c79d20, 0px -3px #f8e48f, 3px 0px #c79d20 ; 
+	transform: translate3d(0, 0.65em, -0.3em);
+	transition: box-shadow 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), box-shadow 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), box-shadow 150ms cubic-bezier(0,0,0.58,1);
+}
+.btn-read button:hover{
+	background: #fbcf3a;
+	transform: translate(0,0.25em);
+}
+.btn-read button:hover::before{
+	transform: translate3d(0, 0.5em, -1em);
+}
+.btn-read button:hover:active{
+	background: #fbcf3a;
+	transform: translate(0em, 0.65em);
+}
+.btn-read button:active::before{
+	box-shadow: 0 0 0 2px #ddb22f, 0 0 #f8e48f;
+	transform: translate3d(0, 0, -1em);
+}
+.imgbox.hide{
+    display: none;
+}
+.imgbox{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.card{
+    text-align: center;
+    height: fit-content;
+    max-width: 300px;
+    margin: 12px 20px;
+    border: 1px solid #313131;
+    box-shadow: 0px 0px #000000, 6px 6px #000000, 0px 0px #000000, 6px 6px #000000;
+    background: #fff;
+    transition: 0.5s;
+}
+.card:hover{
+     transform: translatey(-5px);
+     transition: 0.5s;
+}
+.card .img{
+    height: 200px;
+    width: 300px;
+}
+.card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card .top-text{
+    padding: 5px;
+}
+.card .top-text .join{
+    font-size: 13pt;
+    font-weight: bolder;
+    color: #313131;
+}
+.card .top-text p{
+    font-size: 11pt;
+    font-weight: 500;
+    color: #313131;
+    line-height: 20px;
+}
+.popup{
+    position: fixed;
+    z-index: 1100;
+   width: 100%;
+   top: 50%;
+   left: 0;
+}
+.popup .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 11000;
+    display: none;
+}
+.popup .read-box{
+    border-radius: 15px;    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: fit-content;
+    height: fit-content;
+    z-index: 12000;
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+    background: #313131;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: center;
+    box-shadow: -4px 0px #636363, 0px 4px #000, 0px -4px #636363, 4px 0px #000;
+}
+.popup.active .overlay{
+    display: block;
+}
+.popup.active .read-box{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}
+.read-box h3{
+    font-size: 15pt;
+    margin-top: 10px;
+}
+.read-box p{
+    margin: 5px;
+}
+.read-box .btn-read button{
+    margin-top: 15px;
+    margin: 5px;
+}
+.popup img{
+    width: 420px;
+    height: 320px;
+}
+.popup .microbit img{
+    width: 700px;
+    height: 360px;
+}
+.popup .read-box .discord img{
+    width: 380px;
+    height: 310px;
+}
+
+.imgbox .card1{
+    width: 340px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding-left: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.imgbox .card1 .img1{
+    width: 100%;
+    height: 100%;
+}
+.imgbox .card1 .img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imgbox .card1 .top-text1{
+    top: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: top 0.4s;
+}
+.imgbox .card1:hover .top-text1{
+    top: 0;
+}
+.imgbox .card1 .top-text1 p {
+    font-size: 14pt;
+    font-weight: bolder;
+    color: #313131;
+    padding: 15px;
+}
+@media screen and (max-width: 978px){
+    .imgbox{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card{
+        max-width: 500px;
+        margin: 10px 0;
+    }
+    .card1{
+        max-width: 500px;
+        margin: 10px 0;
+    }
+}

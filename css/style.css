@@ -1,0 +1,328 @@
+*{	
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Kanit', sans-serif;
+}
+@font-face {
+    font-family: 'rd_chulajaruekregular';
+    src: url('rd_chulajaruek-webfont.eot');
+    src: url('rd_chulajaruek-webfont.eot?#iefix') format('embedded-opentype'),
+         url('rd_chulajaruek-webfont.woff2') format('woff2'),
+         url('rd_chulajaruek-webfont.woff') format('woff'),
+         url('rd_chulajaruek-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.menu-wrap{
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99;
+}
+.toggler{
+	position: absolute;
+	top: 1.5rem;
+	right: 2.5rem;
+	width: 50px;
+	height: 50px;
+	z-index: 3;
+	opacity: 0;
+	cursor: pointer;
+}
+.hamburger{
+	position: absolute;
+	top: 30px;
+	right: 35px;
+	width: 45px;
+	height: 45px;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #313131;
+	box-shadow: -3.5px 0px #636363, 0px 5px #000, 0px -3.5px #636363, 5px 0px #000;
+}
+.hamburger>div{
+	position: absolute;
+	width: 60%;
+	height: 3px;
+	border-radius: 1.5px;
+	background-color: #fff;
+	transition: .4s;
+}
+.hamburger>div:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	border-radius: 1.5px;
+	background-color: #fff;
+	top: -10px;
+	right: 0;
+	transition: .4s;
+}
+.hamburger>div:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	border-radius: 1.5px;
+	background-color: #fff;
+	top: 10px;
+	right: 0;
+	transition: .4s;
+}
+.toggler:checked + .hamburger>div{
+	transform: rotate(135deg);
+}
+.toggler:checked:hover + .hamburger>div{
+	transform: rotate(225deg);
+}
+.toggler:checked + .hamburger>div:before, .toggler:checked + .hamburger>div:after{
+	top: 0;
+	transform: rotate(90deg);
+}
+.menu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	visibility: hidden;
+	transition: .6s;
+}
+.menu > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-150%) translateY(-50%);
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+}
+.menu > div > div{
+	max-width: 90vw;
+	max-height: 100vh;
+	opacity: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.menu > div > div > ul > li{
+	list-style: none;
+}
+.menu > div > div > ul > li > a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 580;
+	margin: .5rem;
+	transition: .3s;
+	font-size: 1.2rem;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.menu > div > div > ul > li > a:hover{
+	color: 	#DB4A73;
+	font-weight: 900;
+	font-size: 1.3rem;
+	transition: .3s;
+}
+.toggler:checked ~ .menu{
+	visibility: visible;
+}
+.toggler:checked ~ .menu > div{
+	transform: translateX(-50%) translateY(-50%);
+}
+.toggler:checked ~ .menu > div > div{
+	opacity: 1;
+}
+.social{
+	position: fixed;
+	top: 1rem;
+	left: 2rem;
+	display: flex;
+	margin-left: 3rem;
+	z-index: 95;
+	font-family: 'Kanit', sans-serif;
+}
+.social .btns a button{
+	color: #fff;
+	width: 38px;
+	height: 33px;
+	margin: 0 18px;
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.social .btns a i{
+	list-style: none;
+	position: absolute;
+}
+.social .btns .btn-git button{
+	padding: 0.2rem 0.75rem;
+	background: #313131;
+	border: 3px solid #313131;
+	box-shadow: -4px 0px #636363, 0px 4px #000, 0px -4px #636363, 4px 0px #000 ;
+	transform-style: preserve-3d;
+	transition: background 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), background 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), background 150ms cubic-bezier(0,0,0.58,1);
+}
+.social .btns .btn-git button::before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 3px;
+	background: #2c2b2b;
+	box-shadow: -3px 0px #636363, 0px 3px #000, 0px -3px #636363, 3px 0px #000 ; 
+	transform: translate3d(0, 0.4em, -0.3em);
+	transition: box-shadow 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), box-shadow 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), box-shadow 150ms cubic-bezier(0,0,0.58,1);
+}
+.social .btns .btn-git button:hover{
+	background: #313131;
+	transform: translate(0,0.25em);
+}
+.social .btns .btn-git button:hover::before{
+	transform: translate3d(0, 0.25em, -1em);
+}
+.social .btns .btn-git button:hover:active{
+	background: #313131;
+	transform: translate(0em, 0.5em);
+}
+.social .btns .btn-git button:active::before{
+	box-shadow: 0 0 0 2px #000, 0 0 #636363;
+	transform: translate3d(0, 0, -1em);
+}
+/**----------------------------------**/
+.social .btns .btn-fb button{
+	padding: 0.2rem 0.75rem;
+	background: #3b5999;
+	border: 3px solid #3b5999;
+	box-shadow: -4px 0px #5e78af, 0px 4px #234388, 0px -4px #5e78af, 4px 0px #234388 ;
+	transform-style: preserve-3d;
+	transition: background 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), background 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), background 150ms cubic-bezier(0,0,0.58,1);
+}
+.social .btns .btn-fb button::before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 3px;
+	background: #37538f;
+	box-shadow: -3px 0px #5e78af, 0px 3px #234388, 0px -3px #5e78af, 3px 0px #234388 ; 
+	transform: translate3d(0, 0.4em, -0.3em);
+	transition: box-shadow 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), box-shadow 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), box-shadow 150ms cubic-bezier(0,0,0.58,1);
+}
+.social .btns .btn-fb button:hover{
+	background: #3b5999;
+	transform: translate(0,0.25em);
+}
+.social .btns .btn-fb button:hover::before{
+	transform: translate3d(0, 0.25em, -1em);
+}
+.social .btns .btn-fb button:hover:active{
+	background: #3b5999;
+	transform: translate(0em, 0.5em);
+}
+.social .btns .btn-fb button:active::before{
+	box-shadow: 0 0 0 2px #234388, 0 0 #5e78af;
+	transform: translate3d(0, 0, -1em);
+}
+/**----------------------------------**/
+.social .btns .btn-ig button{
+	padding: 0.2rem 0.75rem;
+	background: #e1306c;
+	border: 3px solid #e1306c;
+	box-shadow: -4px 0px #e46690, 0px 4px #c5245a, 0px -4px #e46690, 4px 0px #c5245a ;
+	transform-style: preserve-3d;
+	transition: background 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), background 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), background 150ms cubic-bezier(0,0,0.58,1);
+}
+.social .btns .btn-ig button::before{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 3px;
+	background: #cf2d63;
+	box-shadow: -3px 0px #e46690, 0px 3px #c5245a, 0px -3px #e46690, 3px 0px #c5245a ; 
+	transform: translate3d(0, 0.4em, -0.3em);
+	transition: box-shadow 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), box-shadow 150ms cubic-bezier(0,0,0.58,1);
+	transition: transform 150ms cubic-bezier(0,0,0.58,1), box-shadow 150ms cubic-bezier(0,0,0.58,1);
+}
+.social .btns .btn-ig button:hover{
+	background: #e1306c;
+	transform: translate(0,0.25em);
+}
+.social .btns .btn-ig button:hover::before{
+	transform: translate3d(0, 0.25em, -1em);
+}
+.social .btns .btn-ig button:hover:active{
+	background: #e1306c;
+	transform: translate(0em, 0.5em);
+}
+.social .btns .btn-ig button:active::before{
+	box-shadow: 0 0 0 2px #c5245a, 0 0 #e46690;
+	transform: translate3d(0, 0, -1em);
+}
+.scrollTop{
+	position: fixed;
+	bottom: 500px;
+	right: 35px;
+	width: 40px;
+	height: 40px;
+	background: #313131 url(/images/scroll.png);
+	box-shadow: -3.5px 0px #636363, 0px 5px #000, 0px -3.5px #636363, 5px 0px #000;
+	background-size: 45px;
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	z-index: 1000;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+.scrollTop.active{
+	bottom: 40px;
+	visibility: visible;
+	opacity: 1;
+}
+footer{
+	text-align: center;
+	justify-content: center;
+	background-color: #444b69;
+	padding: 20px;
+	color: #f9f9ff;
+}
