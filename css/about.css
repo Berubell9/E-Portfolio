@@ -1,6 +1,6 @@
 .two{
     position: relative;
-    background: url(/images/bg2.png); 
+    background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)), url(/images/bg2.png); 
     width: 100%;
     height: 100vh;
     display: flex;
@@ -8,6 +8,8 @@
     align-items: center;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
  }
  .two .photo2{
     top: 150px;

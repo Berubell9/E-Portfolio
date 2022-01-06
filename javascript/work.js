@@ -67,3 +67,36 @@ function togglePopup14(){
 function togglePopup15(){
   document.getElementById("popup-15").classList.toggle("active");
 }
+function togglePopup16(){
+  document.getElementById("popup-16").classList.toggle("active");
+}
+function togglePopup17(){
+  document.getElementById("popup-17").classList.toggle("active");
+}
+function togglePopup18(){
+  document.getElementById("popup-18").classList.toggle("active");
+}
+function togglePopup19(){
+  document.getElementById("popup-19").classList.toggle("active");
+}
+function togglePopup20(){
+  document.getElementById("popup-20").classList.toggle("active");
+}
+function togglePopup21(){
+  document.getElementById("popup-21").classList.toggle("active");
+}
+function togglePopup22(){
+  document.getElementById("popup-22").classList.toggle("active");
+}
+function togglePopup23(){
+  document.getElementById("popup-23").classList.toggle("active");
+}
+function togglePopup24(){
+  document.getElementById("popup-24").classList.toggle("active");
+}
+function togglePopup25(){
+  document.getElementById("popup-25").classList.toggle("active");
+}
+function togglePopup26(){
+  document.getElementById("popup-26").classList.toggle("active");
+}

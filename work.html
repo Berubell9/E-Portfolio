@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/ghost.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/slide.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
@@ -28,8 +29,8 @@
                     <ul>
                         <li><a href="index.html">Home</i></a></li>
                         <li><a href="about.html">About me</a></li>
-                        <li><a href="about.html">Skills</a></li>
                         <li><a href="work.html">Works</a></li>
+                        <li><a href="activity.html">Activities</a></li>
                         <li><a href="certificate.html">Certificates</a></li>
                     </ul>
                 </div>
@@ -38,19 +39,58 @@
     </div>
     <!----------------------------------------------------------------------------------------------->
     <section class="four" id="work">
-        <h1>ผลงาน</h1>
-        <h2>Works</h2>
+        <h1>
+            <span>W</span>
+            <span>O</span>
+            <span>R</span>
+            <span>K</span>
+           </h1>
         <div class="box-list">
             <ul>
-                <li class="list active" data-filter="all">All</li>
-                <li class="list" data-filter="computer">Computer</li>
-                <li class="list" data-filter="art">Art & Graphic Design</li>
-                <li class="list" data-filter="video">Video</li>
-                <li class="list" data-filter="branding">Branding</li>
+                <li class="list active" data-filter="all">ทั้งหมด</li>
+                <li class="list" data-filter="computer">คอมพิวเตอร์</li>
+                <li class="list" data-filter="art">ศิลปะ เเละออกเเบบกราฟิก</li>
+                <li class="list" data-filter="video">วีดีโอ</li>
             </ul>
         </div>
         <!-- computer -->
         <div class="imgbox" data-item="computer">
+            <div class="card">
+                <div class="img">
+                    <img src="work/com/ปก2.jpg">
+                </div>
+                <div class="top-text">
+                    <div class="join">
+                        เป็นวิทยากรให้ความรู้การสร้างเว็บไซต์เบื้องต้น
+                        <p>(Marain Onilne)</p>
+                        <div class="btn-read">
+                            <button onclick="togglePopup14()">อ่านเพิ่มเติม</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-14">
+                <div class="overlay"></div>
+                <div class="read-box">
+                    <div class="close-btn" onclick="togglePopup14()">&times;</div>
+                    <h3>เป็นวิทยากรให้ความรู้การสร้างเว็บไซต์ <br>(Marain Onilne)</h3>
+                    <p>เป็นวิทยากรให้ความรู้การสร้างเว็บไซต์ง่ายๆ ด้วยพื้นฐาน HTML CSร
+                        และJavascript wร้อมทั้งนำเว็บไซต์ขึ้นสู่โลกออนไลน์
+                        <br>ดิฉันรับหน้าที่เป็นวิทยากรจัดการสอนเขียนเว็บไซต์ด้วยพื้นฐาน HTML ผ่านทางออนไลน์
+                        ด้วยโปรแกรม Discord 
+                        <br>เพื่อให้ความรู้สำหรับคนที่ยังไม่เคยมีพื้นฐานมาก่อน และให้ผู้เรียน
+                        สามารถเข้าใจจนนำความรู้ไปต่อยอดกับผลงานตัวเองได้ในอนาคต 
+                        <br>มีการนำเสนอกิจกรรม
+                        ผ่านทาง CampHub มาแล้ว 2 ครั้ง มีผู้สนใจเข้าเรียนมาแล้วมากกว่า 60 คน
+                    </p>
+                    <div class="microbit"><img src="work/com/มาเรียน.png"></div>
+                    <div class="btn-read">
+                        <a href="https://web.facebook.com/marianonilne" target="_blank"><button class="btn"
+                            type="button" name="button">Facebook</button></a>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------->
             <div class="card">
                 <div class="img">
                     <img src="work/com/face.jpeg">
@@ -190,41 +230,42 @@
             <!----------------------------->
             <div class="card">
                 <div class="img">
-                    <img src="work/com/pm1.jpeg">
+                    <img src="work/com/discord1.PNG">
                 </div>
                 <div class="top-text">
                     <div class="join">
-                        เว็บไซต์เช็คค่า AQI เเละฝุ่น PM 2.5
-                        <p>(Website to check AQI and PM 2.5)</p>
+                        บอทดิสคอร์ดเล่นเกม
+                        <br>
+                        <p>(Bot discord play game)</p>
                         <div class="btn-read">
-                            <button onclick="togglePopup5()">อ่านเพิ่มเติม</button>
+                            <button onclick="togglePopup8()">อ่านเพิ่มเติม</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup-5">
+            <div class="popup" id="popup-8">
                 <div class="overlay"></div>
                 <div class="read-box">
-                    <div class="close-btn" onclick="togglePopup5()">&times;</div>
-                    <h3>เว็บไซต์เช็คค่า AQI เเละฝุ่น PM 2.5<br>(Website to check AQI and PM 2.5)</h3>
-                    <p>จัดทำเว็บไซต์ขึ้นเพื่อตรวจสอบระดับความรุนเเรงของค่าดัชนีคุณภาพอากาศ (AQI) เเละค่าฝุ่น PM2.5
-                        <br>ของเเต่ละพื้นที่ในประเทศไทยในปัจจุบัน
-                        โดยใช้สีเป็นตัวบอกระดับความรุนเเรงของค่าดัชนีคุณภาพอากาศ 
-                        <br>อีกทั้งยังมีป๊อปอัพบอกค่าดัชนีคุณภาพอากาศ ค่าฝุ่น PM2.5 ระดับความรุนเเรง
-                        ของอากาศ เเละชื่อสถานที่
-                        <br>อ้างอิงข้อมูลจากเว็บ air4thai (URL : http://air4thai.pcd.go.th/webV2/) พัฒนามาจากภาษา Python
-                        <br>อัพเดตล่าสุดวันที่ 10/07/2564
+                    <div class="close-btn" onclick="togglePopup8()">&times;</div>
+                    <h3>บอทดิสคอร์ดเล่นเกม <br>(Bot discord play game)</h3>
+                    <p>ฟังก์ชันบอทดิสคอร์ดที่ดิฉันสนใจ เเละได้ไปศึกษามาเพิ่มเติมมานอกจากบอทดิสคอร์สเปิดเพลง  
+                        <br>ฟังก์ชันที่เขียนภาษาคอมพิวเตอร์แล้วมี Output ออกมา
+                        <br>ฟังก์ชันเล่นเกม XO กับเพื่อน
                     </p>
-                    <img src="work/com/pm.jpeg">
+                    <div class="discord">
+                        <img src="work/com/Capture2.PNG">
+                        <img src="work/com/dis3.PNG">
+                    </div>
                     <div class="btn-read">
-                        <a href="https://berubell9.github.io/AQI-PM2.5/" target="_blank"><button class="btn"
-                                type="button" name="button">Website</button></a>
-                        <a href="https://github.com/Berubell9/AQI-PM2.5" target="_blank"><button class="btn"
-                                type="button" name="button">Github repository</button></a>
+                        <a href="https://discord.com/api/oauth2/authorize?client_id=915148819384139776&permissions=8&scope=bot" target="_blank"><button class="btn" type="button"
+                                name="button">ทดลองใช้บอทดิสคอร์ด</button></a>
+                        <a href="https://github.com/Berubell9/Bot-Discord-Play-Game" target="_blank"><button class="btn" type="button" name="button">Github
+                                repository</button></a>
                     </div>
                 </div>
             </div>
             <!----------------------------->
+            
             <div class="card">
                 <div class="img">
                     <img src="work/com/space.jpeg">
@@ -248,7 +289,35 @@
                         <br>โดยสาขาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยขอนแก่น
                         <br>"โดยดิฉันจัดทำในส่วนเเนะนำผู้จัดทำ"
                     </p>
-                    <div class="microbit"><img src="work/com/space1.jpeg"></div>
+                    <div class="slidershow middle">
+                        <div class="slides">
+                            <input type="radio" name="r" id="r13" checked>
+                            <input type="radio" name="r" id="r14">
+                            <input type="radio" name="r" id="r15">
+                            <input type="radio" name="r" id="r16">
+            
+                            <div class="slide s4">
+                                <img src="work/com/space4.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="work/com/space2.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="work/com/space3.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="work/com/space1.jpeg">
+                            </div>
+                        </div>
+            
+                        <div class="navigation">
+                            <label for="r13" class="bar"></label>
+                            <label for="r14" class="bar"></label>
+                            <label for="r15" class="bar"></label>
+                            <label for="r16" class="bar"></label>
+                        </div>     
+                   </div>
+                    
                     <div class="btn-read">
                         <a href="https://jirawat-rackz.github.io/web_cesca_playground/Project/HTML1/index.html"
                             target="_blank"><button class="btn" type="button" name="button">Website</button></a>
@@ -292,45 +361,7 @@
                 </div>
             </div>
             <!----------------------------->
-            <div class="card">
-                <div class="img">
-                    <img src="work/com/discord1.PNG">
-                </div>
-                <div class="top-text">
-                    <div class="join">
-                        บอทดิสคอร์ดเล่นเกม
-                        <br>
-                        <p>(Bot discord play game)</p>
-                        <div class="btn-read">
-                            <button onclick="togglePopup8()">อ่านเพิ่มเติม</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="popup" id="popup-8">
-                <div class="overlay"></div>
-                <div class="read-box">
-                    <div class="close-btn" onclick="togglePopup8()">&times;</div>
-                    <h3>บอทดิสคอร์ดเล่นเกม <br>(Bot discord play game)</h3>
-                    <p>จัดทำบอทดิสคอร์ดขึ้นเนื่องจากได้รับเเรงบันดาลใจมาจากบอทดิสคอร์ดของค่ายฝึกอบรมออนไลน์เชิงปฏิบัติการวิทยาการคอมพิวเตอร์
-                        <br>ครั้งที่ 13 (CSCamp 13) โดยภาควิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์
-                        สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
-                        <br>จึงได้มีความคิดที่อยากจะพัฒนาบอทดิสคอร์ดเล่นเกมไว้สำหรับคลายเครียด พร้อมมีฟังก์ชันอื่นๆ
-                        ที่จะอัปเดตตามมาในอนาคต
-                        <br>พัฒนามาจากภาษา Python
-                    </p>
-                    <div class="discord">
-                        <img src="work/com/discord.PNG">
-                    </div>
-                    <div class="btn-read">
-                        <a href="#" target="_blank"><button class="btn" type="button"
-                                name="button">ทดลองใช้บอทดิสคอร์ด</button></a>
-                        <a href="#" target="_blank"><button class="btn" type="button" name="button">Github
-                                repository</button></a>
-                    </div>
-                </div>
-            </div>
-            <!----------------------------->
+            
             <div class="card">
                 <div class="img">
                     <img src="work/com/act.jpeg">
@@ -357,7 +388,35 @@
                         <br>ได้เเก่ ด้านวิชาการ ด้านจิตอาสา ด้านคุณธรรม ด้านคอมพิวเตอร์ เเละด้านดนตรี
                         <br>มีระบบหลังบ้านเป็น My SQL พัฒนาเว็บไซต์จาก Python & Django Framework
                     </p>
-                    <div class="microbit"><img src="work/com/act1.jpeg"></div>
+                        <div class="slidershow middle">
+                             <div class="slides">
+                                 <input type="radio" name="r" id="r1" checked>
+                                 <input type="radio" name="r" id="r2">
+                                 <input type="radio" name="r" id="r3">
+                                 <input type="radio" name="r" id="r4">
+                 
+                                 <div class="slide s1">
+                                     <img src="work/com/act2.jpeg">
+                                 </div>
+                                 <div class="slide">
+                                     <img src="work/com/act.jpeg">
+                                 </div>
+                                 <div class="slide">
+                                     <img src="work/com/act1.jpeg">
+                                 </div>
+                                 <div class="slide">
+                                     <img src="work/com/act4.jpeg">
+                                 </div>
+                             </div>
+                 
+                             <div class="navigation">
+                                 <label for="r1" class="bar"></label>
+                                 <label for="r2" class="bar"></label>
+                                 <label for="r3" class="bar"></label>
+                                 <label for="r4" class="bar"></label>
+                             </div>     
+                        </div>
+                    
                     <div class="btn-read">
                         <a href="https://github.com/Berubell9/activity" target="_blank"><button class="btn" type="button"
                                 name="button">Github repository</button></a>
@@ -367,7 +426,44 @@
             <!----------------------------->
             <div class="card">
                 <div class="img">
-                    <img src="work/com/act.jpeg">
+                    <img src="work/com/pm1.jpeg">
+                </div>
+                <div class="top-text">
+                    <div class="join">
+                        เว็บไซต์เช็คค่า AQI เเละฝุ่น PM 2.5
+                        <p>(Website to check AQI and PM 2.5)</p>
+                        <div class="btn-read">
+                            <button onclick="togglePopup5()">อ่านเพิ่มเติม</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-5">
+                <div class="overlay"></div>
+                <div class="read-box">
+                    <div class="close-btn" onclick="togglePopup5()">&times;</div>
+                    <h3>เว็บไซต์เช็คค่า AQI เเละฝุ่น PM 2.5<br>(Website to check AQI and PM 2.5)</h3>
+                    <p>จัดทำเว็บไซต์ขึ้นเพื่อตรวจสอบระดับความรุนเเรงของค่าดัชนีคุณภาพอากาศ (AQI) เเละค่าฝุ่น PM2.5
+                        <br>ของเเต่ละพื้นที่ในประเทศไทยในปัจจุบัน
+                        โดยใช้สีเป็นตัวบอกระดับความรุนเเรงของค่าดัชนีคุณภาพอากาศ 
+                        <br>อีกทั้งยังมีป๊อปอัพบอกค่าดัชนีคุณภาพอากาศ ค่าฝุ่น PM2.5 ระดับความรุนเเรง
+                        ของอากาศ เเละชื่อสถานที่
+                        <br>อ้างอิงข้อมูลจากเว็บ air4thai (URL : http://air4thai.pcd.go.th/webV2/) พัฒนามาจากภาษา Python
+                        <br>อัพเดตล่าสุดวันที่ 10/07/2564
+                    </p>
+                    <img src="work/com/pm.jpeg">
+                    <div class="btn-read">
+                        <a href="https://berubell9.github.io/AQI-PM2.5/" target="_blank"><button class="btn"
+                                type="button" name="button">Website</button></a>
+                        <a href="https://github.com/Berubell9/AQI-PM2.5" target="_blank"><button class="btn"
+                                type="button" name="button">Github repository</button></a>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------->
+            <div class="card">
+                <div class="img">
+                    <img src="work/com/covid2.jpeg">
                 </div>
                 <div class="top-text">
                     <div class="join">
@@ -390,9 +486,11 @@
                         <br>และผู้เสียชีวิตจากเชื้อไวรัส Covid-19 ได้ทั่วโลก อีกทั้งยังสามารถทราบข้อมูลได้อย่าง Real time โดยวงที่ปรากฎนั้นจะแสดงสี
                         <br>และขนาดเพื่อบ่งบอกถึงระดับ ความรุนแรงของสถานการณ์การติดเชื้อในขณะนั้น พัฒนามาจาก React
                     </p>
-                    <div class="microbit"><img src="work/com/act1.jpeg"></div>
+                    <div class="microbit"><img src="work/com/covid.jpeg"></div>
                     <div class="btn-read">
-                        <a href="https://github.com/Berubell9/activity" target="_blank"><button class="btn" type="button"
+                        <a href="https://covid-19-tracker-3bcbf.web.app/" target="_blank"><button class="btn"
+                            type="button" name="button">Website</button></a>
+                        <a href="https://github.com/Berubell9/Covid-19-Tracker" target="_blank"><button class="btn" type="button"
                                 name="button">Github repository</button></a>
                     </div>
                 </div>
@@ -400,13 +498,13 @@
             <!----------------------------->
             <div class="card">
                 <div class="img">
-                    <img src="work/com/act.jpeg">
+                    <img src="work/com/ขาย.jpeg">
                 </div>
                 <div class="top-text">
                     <div class="join">
                         
                         เว็บไซต์ขายของออนไลน์
-                        <p>(Shop)</p>
+                        <p>(Shopping cart)</p>
                         <div class="btn-read">
                             <button onclick="togglePopup11()">อ่านเพิ่มเติม</button>
                         </div>
@@ -417,52 +515,146 @@
                 <div class="overlay"></div>
                 <div class="read-box">
                     <div class="close-btn" onclick="togglePopup11()">&times;</div>
-                    <h3>เว็บไซต์ขายของออนไลน์ <br>(Shop)</h3>
-                    <p>   เนื่องจากสถานะการในปัจจุบันมีการระบาดของเชื้อไวรัส Covid - 19
-                        ดิฉันจึงได้จัดทำเว็บไซค์ที่สามารถดูจำนวนของผู้ติดเชื้อ
-                        <br>และผู้เสียชีวิตจากเชื้อไวรัส Covid-19 ได้ทั่วโลก อีกทั้งยังสามารถทราบข้อมูลได้อย่าง Real time โดยวงที่ปรากฎนั้นจะแสดงสี
-                        <br>และขนาดเพื่อบ่งบอกถึงระดับ ความรุนแรงของสถานการณ์การติดเชื้อในขณะนั้น
-                        <br>พัฒนามาจาก React
+                    <h3>เว็บไซต์ขายของออนไลน์ <br>(Shopping cart)</h3>
+                    <p>ดิฉันได้มีร้านค้าออนไลน์ทาง Instagram อยู่แล้ว จึงอยากจะทำเว็บไซต์ขายของออนไลน์
+                        <br>เพื่อที่จะได้เรียนรู้ภาษา PHP และระบบหลังบ้านให้ดียิ่งขึ้น อีกทั้งยังสามารถนำมาใช้งานได้จริงในธุรกิจของตนเอง 
+                        <br>โดยในเว็บไซต์จะมีระบบหลังบ้าน ได้แก่ ระบบจัดการผู้ดูแล ระบบจัดกานสมาชิก ระบบจัดการประเภทสินค้า  
+                        <br>ระบบจัดการธนาคาร ส่วนระบบหน้าบ้านจะมีการแสดงผลสินค้า และรายละเอียดสินค้าให้ลูกค้าได้สั่งซื้อ
                     </p>
-                    <div class="microbit"><img src="work/com/act1.jpeg"></div>
+                    <div class="slidershow middle">
+                        <div class="slides">
+                            <input type="radio" name="r" id="r5" checked>
+                            <input type="radio" name="r" id="r6">
+                            <input type="radio" name="r" id="r7">
+                            <input type="radio" name="r" id="r8">
+            
+                            <div class="slide s2">
+                                <img src="work/com/ขาย.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="work/com/ขาย2.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="work/com/ขาย4.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="work/com/ขาย3.jpeg">
+                            </div>
+                        </div>
+            
+                        <div class="navigation">
+                            <label for="r5" class="bar"></label>
+                            <label for="r6" class="bar"></label>
+                            <label for="r7" class="bar"></label>
+                            <label for="r8" class="bar"></label>
+                        </div>     
+                   </div>
                     <div class="btn-read">
-                        <a href="https://github.com/Berubell9/activity" target="_blank"><button class="btn" type="button"
+                        <a href="https://www.instagram.com/13eru.shop/" target="_blank"><button class="btn" type="button"
+                            name="button">Instagram</button></a>
+                        <a href="https://github.com/Berubell9/shopping" target="_blank"><button class="btn" type="button"
                                 name="button">Github repository</button></a>
                     </div>
                 </div>
             </div>
-            <!------------------------- UX UI ---------------------------------------------------------->
-            <div class="card1">
-                <div class="img1">
-                    <img src="work/graphic/gra04.png">
+            <!----------------------------->
+            <div class="card">
+                <div class="img">
+                    <img src="work/com/bio.jpeg">
                 </div>
-                <div class="top-text1">
-                    <p>ออกเเบบ UX/UI แอปพลิเคชัน<br>เพื่อใช้สำหรับทางการเเพทย์ <br>ของผู้ป่วยโรคเบาหวาน</p>
+                <div class="top-text">
+                    <div class="join">
+                        
+                        เว็บไซต์สื่อการสอนวิชาชีววิทยา
+                        <p>(Biology website)</p>
+                        <div class="btn-read">
+                            <button onclick="togglePopup12()">อ่านเพิ่มเติม</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-12">
+                <div class="overlay"></div>
+                <div class="read-box">
+                    <div class="close-btn" onclick="togglePopup12()">&times;</div>
+                    <h3>เว็บไซต์สื่อการสอนวิชาชีววิทยา <br>(Biology website)</h3>
+                    <p>ดิฉันได้รับมอบหมายให้จัดทำสื่อการสอนวิชาชีววิทยาในหัวข้ออาณาจักรมอเนอรา ดิฉันจึงได้จัดทำเป็นเว็บไซต์สื่อการสอน
+                        <br>ที่มีเนื้อหา วีดีโอ สรุปเนื้อหา และแเบบฝึกหัดก่อนเรียน หลังเรียน ให้ผู้เรียนได้เรียนรู้อย่างเข้าใจ
+                        <br>เว็บไซต์ถูกพัฒนาจาก HTML CSS Bootstrap 5 ที่ดิฉันมีพื้นฐานอยู่แล้วจึงได้นำมาพัฒนาต่อในผลงานชิ้นนี้
+                    </p>
+                    <div class="slidershow middle">
+                        <div class="slides">
+                            <input type="radio" name="r" id="r9" checked>
+                            <input type="radio" name="r" id="r10">
+                            <input type="radio" name="r" id="r11">
+                            <input type="radio" name="r" id="r12">
+            
+                            <div class="slide s3">
+                                <img src="work/com/bio.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="work/com/bio1.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="work/com/bio2.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="work/com/bio3.jpeg">
+                            </div>
+                        </div>
+            
+                        <div class="navigation">
+                            <label for="r9" class="bar"></label>
+                            <label for="r10" class="bar"></label>
+                            <label for="r11" class="bar"></label>
+                            <label for="r12" class="bar"></label>
+                        </div>     
+                   </div>
                     <div class="btn-read">
-                        <a href="https://drive.google.com/file/d/157of61xjBokwicCp9lgxP0ByrR568TVA/view?usp=sharing" target="_blank">
-                            <button>รับชมผลงาน</button></a>
+                        <a href="https://berubell9.github.io/BiologyWebsite/" target="_blank"><button class="btn"
+                            type="button" name="button">Website</button></a>
+                        <a href="https://github.com/Berubell9/BiologyWebsite" target="_blank"><button class="btn" type="button"
+                                name="button">Github repository</button></a>
                     </div>
                 </div>
             </div>
             <!----------------------------->
-            <div class="card1">
-                <div class="img1">
-                    <img src="work/graphic/gra05.png">
+            <div class="card">
+                <div class="img">
+                    <img src="work/com/ปก.jpg">
                 </div>
-                <div class="top-text1">
-                    <p>ออกเเบบ UX/UI แอปพลิเคชัน<br>เพื่อใช้สำหรับการเลือกตั้ง</p>
+                <div class="top-text">
+                    <div class="join">
+                        ฟิตเตอร์อินสตาแกรม
+                        <p>(Filter Instagram)</p>
+                        <div class="btn-read">
+                            <button onclick="togglePopup13()">อ่านเพิ่มเติม</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-13">
+                <div class="overlay"></div>
+                <div class="read-box">
+                    <div class="close-btn" onclick="togglePopup13()">&times;</div>
+                    <h3>ฟิตเตอร์อินสตาแกรม <br>(Filter Instagram)</h3>
+                    <p>เนื่องจากฟิลเตอร์ Instagram เป็นที่นิยมอย่างมากในตอนนั้น จึงได้จัดทำโครงงานนี้ขึ้นเพื่อ
+                        ให้ความรู้ และเสริมสร้างความมั่นใจให้กับผู้ใช้งาน 
+                        <br>มีเนื้อหาเกี่ยวกับสำนวนภาษาอังกฤษพื้นฐาน ความรู้รอบตัว และเกร็ดความรู้ทางวิทยาศาสตร์ โดยดิฉันได้จัดทำฟิลเตอร์ Instagram
+                        <br> เรื่อง สำนวนภาษาอังกฤษ เป็นมินิเกมเล็กๆ ให้ความสนุก และความรู้ภายในตัว
+                    </p>
+                    <div class="microbit"><img src="work/com/ฟิลเตอร์.jpeg"></div>
                     <div class="btn-read">
-                        <a href="https://drive.google.com/file/d/1uFxp8YJUiotYYdxCTNLHxL9HkSz3DnhX/view?usp=sharing" target="_blank">
-                            <button>รับชมผลงาน</button></a>
+                        <a href="https://www.instagram.com/ar/334959817624085" target="_blank"><button class="btn" type="button"
+                            name="button">รับชมผลงาน</button></a>
+                        <a href="https://drive.google.com/file/d/1HlcY-B2eZD6IoDixDtYnPQtzb92UPh4N/view?usp=sharing" target="_blank"><button class="btn"
+                            type="button" name="button">วีดีโอเเสดงผลงาน</button></a>
                     </div>
                 </div>
             </div>
             <!----------------------------->
+            
         </div>
-
-
-
-
 
         <!-- art -->
         <div class="imgbox" data-item="art">
@@ -486,7 +678,6 @@
                     <img src="work/art/art02.png">
                 </div>
                 <div class="top-text1">
-                    <p>ดอกไม้ที่สื่อถึงผู้หญิง</p>
                     <div class="btn-read">
                         <a href="https://drive.google.com/file/d/1FkZ7hBuC6h4phy6QlWOBZDSR-jNiMSSg/view?usp=sharing" target="_blank">
                             <button>รับชมรูปภาพ</button></a>
@@ -557,131 +748,59 @@
                     </div>
                 </div>
             </div>
+             <!------------------------- UX UI ---------------------------------------------------------->
+             <div class="card1">
+                <div class="img1">
+                    <img src="work/graphic/gra04.png">
+                </div>
+                <div class="top-text1">
+                    <p>ออกเเบบ UX/UI แอปพลิเคชัน<br>เพื่อใช้สำหรับทางการเเพทย์ <br>ของผู้ป่วยโรคเบาหวาน</p>
+                    <div class="btn-read">
+                        <a href="https://drive.google.com/file/d/157of61xjBokwicCp9lgxP0ByrR568TVA/view?usp=sharing" target="_blank">
+                            <button>รับชมผลงาน</button></a>
+                    </div>
+                </div>
+            </div>
             <!----------------------------->
+            <div class="card1">
+                <div class="img1">
+                    <img src="work/graphic/gra05.png">
+                </div>
+                <div class="top-text1">
+                    <p>ออกเเบบ UX/UI แอปพลิเคชัน<br>เพื่อใช้สำหรับการเลือกตั้ง</p>
+                    <div class="btn-read">
+                        <a href="https://drive.google.com/file/d/1uFxp8YJUiotYYdxCTNLHxL9HkSz3DnhX/view?usp=sharing" target="_blank">
+                            <button>รับชมผลงาน</button></a>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------->
+            
         </div>
 
-        <!-- graphic -->
-        <div class="imgbox" data-item="graphic">
-        
-        </div>
-
+       
         <!-- video -->
         <div class="imgbox" data-item="video">
-            <div class="card1">
-                <div class="img1">
-                    <img src="work/brand/b4.jpeg">
-                </div>
-                <div class="top-text1">
-                    <p>ชีววิทยาชั้นมัธยมศึกษาปีที่ 4
-                    </p>
-                    <div class="btn-read">
-                        <a href="https://drive.google.com/file/d/1NMadzTEns9Q5pT2S3Immc77OozBPxQql/view?usp=sharing" target="_blank">
-                            <button>รับชมวีดีโอ</button></a>
-                    </div>
-                </div>
+            <div class="video">
+                <iframe width="670" height="350" src="https://www.youtube.com/embed/RGBAblywJNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         <!----------------------------->
-        <div class="card1">
-            <div class="img1">
-                <img src="work/video/เคมี.png">
+            <div class="video">
+                <iframe width="670" height="350" src="https://www.youtube.com/embed/N1SKt15lMMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="top-text1">
-                <p>เคมีชั้นมัธยมศึกษาปีที่ 5
-                </p>
-                <div class="btn-read">
-                    <a href="https://drive.google.com/file/d/1hJ8k_XWpYSZbKMCwrLEpZ8moVTaC_qvF/view?usp=sharing" target="_blank">
-                        <button>รับชมวีดีโอ</button></a>
-                </div>
+        <!----------------------------->
+            <div class="video">
+                <iframe width="670" height="350" src="https://www.youtube.com/embed/B2XhEiOduCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
          <!----------------------------->
-         <div class="card1">
-            <div class="img1">
-                <img src="work/video/a2.png">
+            <div class="video">
+                <iframe width="670" height="350" src="https://www.youtube.com/embed/SCUgxgX2swc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="top-text1">
-                <p>ชีววิทยาชั้นมัธยมศึกษาปีที่ 6
-                </p>
-                <div class="btn-read">
-                    <a href="https://drive.google.com/file/d/1rQBUWSD-F3p2DhO1G82MX7DsJp-hC1JG/view?usp=sharing" target="_blank">
-                        <button>รับชมวีดีโอ</button></a>
-                </div>
-            </div>
-        </div>
         <!----------------------------->
-        <div class="card1">
-            <div class="img1">
-                <img src="work/graphic/gra04.png">
-            </div>
-            <div class="top-text1">
-                <p>สายรัดข้อมือ เเละแอปพลิเคชันสำหรับ<br>ผู้ป่วยโรคเบาหวาน
-                </p>
-                <div class="btn-read">
-                    <a href="https://drive.google.com/file/d/1DQBgWZ52p7kH-XWHCeR9oUgboLmE4lP8/view?usp=sharing" target="_blank">
-                        <button>รับชมวีดีโอ</button></a>
-                </div>
-            </div>
-        </div>
-        <!----------------------------->
-        <div class="card1">
-            <div class="img1">
-                <img src="work/graphic/gra05.png">
-            </div>
-            <div class="top-text1">
-                <p>แอปพลิเคชันสำหรับการเลือกตั้ง
-                </p>
-                <div class="btn-read">
-                    <a href="https://drive.google.com/file/d/1rQBUWSD-F3p2DhO1G82MX7DsJp-hC1JG/view?usp=sharing" target="_blank">
-                        <button>รับชมวีดีโอ</button></a>
-                </div>
-            </div>
-        </div>
+        
        
     </div>
-        <!-- branding -->
-        <div class="imgbox" data-item="branding">
-            <div class="card1">
-                <div class="img1">
-                    <img src="work/brand/b2.jpeg">
-                </div>
-                <div class="top-text1">
-                    <p>ร้านค้าขายของทำจากลูกปัด
-                    </p>
-                    <div class="btn-read">
-                        <a href="https://www.instagram.com/13eru.shop/" target="_blank">
-                            <button>Instagram</button></a>
-                    </div>
-                </div>
-            </div>
-        <!----------------------------->
-        <div class="card1">
-            <div class="img1">
-                <img src="work/brand/b01.jpeg">
-            </div>
-            <div class="top-text1">
-                <p>Studygram
-                </p>
-                <div class="btn-read">
-                    <a href="https://www.instagram.com/beru.study/" target="_blank">
-                        <button>Instagram</button></a>
-                </div>
-            </div>
-        </div>
-        <!----------------------------->
-        <div class="card1">
-            <div class="img1">
-                <img src="work/brand/b3.jpeg">
-            </div>
-            <div class="top-text1">
-                <p>มาเรียนออนไลน์
-                </p>
-                <div class="btn-read">
-                    <a href="https://www.facebook.com/marianonilne" target="_blank">
-                        <button>Facebook</button></a>
-                </div>
-            </div>
-        </div>
-        </div>
+      
 
     </section>
     

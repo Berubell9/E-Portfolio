@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/ghost.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/activity.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Activities | กรกมล</title>
+</head>
+
+<body>
+    <div class="scrollTop" onclick="scrollToTop();"></div>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</i></a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="work.html">Works</a></li>
+                        <li><a href="activity.html">Activities</a></li>
+                        <li><a href="certificate.html">Certificates</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------->
+    <section class="seven" id="activity">
+       <h1>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+        <span>I</span>
+        <span>V</span>
+        <span>I</span>
+        <span>T</span>
+        <span>I</span>
+        <span>E</span>
+        <span>S</span>
+       </h1>
+        <div class="box-list">
+            <ul>
+                <li class="list active" data-filter="all">ทั้งหมด</li>
+                <li class="list" data-filter="award">รางวัล</li>
+                <li class="list" data-filter="computer">วิชาการ</li>
+                <li class="list" data-filter="volunteer">ค่ายคุณธรรม จริยธรรม เเละจิตอาสา</li>
+                <li class="list" data-filter="music">ดนตรี</li>
+            </ul>
+        </div>
+        <!-- award -->
+        <div class="imgbox" data-item="award">
+            <div class="card">
+                <div class="image">
+                    <img src="work/graphic/gra04.png">
+                </div>
+                <div class="content">
+                    <div class="title">รางวัลชนะเลิศอันดับ 1</div>
+                    <div class="sub-title"> การเเข่งขันเเนวคิดโครงงานวิทยาศาสตร์ เเละเทคโนโลยี โครงการยอดนักคิดครั้งที่ 2 ในหัวข้อ การเเพทย์ เเละสาธารณสุข </div>
+                    <div class="bottom">
+                        <p>จัดโดยสถาบันส่งเสริม เเละพัฒนาการศึกษาเชิงบวก</p>
+                    </div>
+                    <div class="btn-read">
+                        <button onclick="togglePopup15()">ภาพกิจกรรม</button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-15">
+                <div class="overlay"></div>
+                <div class="read-box">
+                    <div class="close-btn" onclick="togglePopup15()">&times;</div>
+                    <div class="slidershow middle">
+                        <div class="slides">
+                            <input type="radio" name="r" id="r1" checked>
+                            <input type="radio" name="r" id="r2">
+                            <input type="radio" name="r" id="r3">
+                            <input type="radio" name="r" id="r4">
+            
+                            <div class="slide s1">
+                                <img src="activity/award/16.png">
+                            </div>
+                            <div class="slide">
+                                <img src="activity/award/9.png">
+                            </div>
+                            <div class="slide">
+                                <img src="activity/award/13.png">
+                            </div>
+                            <div class="slide">
+                                <img src="activity/award/14.png">
+                            </div>
+                        </div>
+            
+                        <div class="navigation">
+                            <label for="r1" class="bar"></label>
+                            <label for="r2" class="bar"></label>
+                            <label for="r3" class="bar"></label>
+                            <label for="r4" class="bar"></label>
+                        </div>     
+                   </div>
+                    <div class="btn-read">
+                        <a href="https://drive.google.com/file/d/1ZCrF6pxlChjFtvjWZ2imvVPp0xKN_QZh/view?usp=sharing" target="_blank"><button class="btn"
+                                type="button" name="button">รับชมผลงาน</button></a>
+                        <a href="https://www.youtube.com/watch?v=SCUgxgX2swc"
+                            target="_blank"><button class="btn" type="button"
+                                name="button">วีดีโอนำเสนอผลงาน</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------------------------- -->
+            <div class="card">
+                <div class="image">
+                    <img src="work/graphic/gra05.png">
+                </div>
+                <div class="content">
+                    <div class="title">รางวัลชมเชยด้านความเป็นไปได้</div>
+                    <div class="sub-title"> การเเข่งขัน Hackathon : Smart Voter Application (แอปพลิเคชันเพื่อการโหวตอย่างมีคุณภาพ)</div>
+                    <div class="bottom">
+                        <p>จัดโดยสำนักนวัตกรรมเพื่อประชาธิปไตย สถาบันพระปกเกล้า ร่วมกับสถานทูตสวิตเซอร์แลนด์ประจำประเทศไทย</p>
+                    </div>
+                    <div class="btn-read">
+                        <button onclick="togglePopup16()">ภาพกิจกรรม</button>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup-16">
+                <div class="overlay"></div>
+                <div class="read-box">
+                    <div class="close-btn" onclick="togglePopup16()">&times;</div>
+                    <div class="slidershow middle">
+                        <div class="slides">
+                            <input type="radio" name="r" id="r5" checked>
+                            <input type="radio" name="r" id="r6">
+                            <input type="radio" name="r" id="r7">
+                            <input type="radio" name="r" id="r8">
+            
+                            <div class="slide s2">
+                                <img src="activity/award/hackaton.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="activity/award/hackaton1.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="activity/award/hackton2.jpeg">
+                            </div>
+                            <div class="slide">
+                                <img src="activity/award/hackton3.jpg">
+                            </div>
+                        </div>
+            
+                        <div class="navigation">
+                            <label for="r5" class="bar"></label>
+                            <label for="r6" class="bar"></label>
+                            <label for="r7" class="bar"></label>
+                            <label for="r8" class="bar"></label>
+                        </div>     
+                   </div>
+                    <div class="btn-read">
+                        <a href="https://drive.google.com/file/d/1HqL093JUu5L2yC76KO3Qdl1uRw7R4u5x/view?usp=sharing" target="_blank"><button class="btn"
+                                type="button" name="button">รับชมผลงาน</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------------------------- -->
+            <div class="card">
+                <div class="image">
+                    <img src="activity/award/เขียนโปรเเกรม.jpg">
+                </div>
+                <div class="content1">
+                    <div class="title1">รางวัลเหรียญทอง อันดับที่ 4</div>
+                    <div class="sub-title1">การเเข่งขันเขียนโปรเเกรมด้วยภาษาคอมพิวเตอร์ ระดับชั้น ม.4 - 6</div>
+                    <div class="bottom1">
+                        <p>งานศิลปหัตถกรรมนักเรียน ระดับเขตพื้นที่การศึกษา ครั้งที่ 69 ประจำปีการศึกษา 2562 ณ โรงเรียนสตรีวิทยา 2 ในพระราชูปถัมภ์สมเด็จพระศรีนครินทราบรมราชชนนี</p>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------------------------- -->
+            <div class="card">
+                <div class="image">
+                    <img src="activity/award/คนดี.jpg">
+                </div>
+                <div class="content1">
+                    <div class="title1">รางวัลคนดีศรีบึงพระยา</div>
+                    <div class="sub-title1">นักเรียนผู้มีคุณธรรม จริยธรรม ระดับดีเด่น</div>
+                    <div class="bottom1">
+                        <p>ชั้นมัธยมศึกษาปีที่ 5 ปีการศึกษา 2563 วันที่ 9 มีนาคม พ.ศ.2564 ณ นวมินทราชินูทิศ เบญจมราชาลัย</p>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------------------------- -->
+            <div class="card">
+                <div class="image">
+                    <img src="certificate/05.jpg">
+                </div>
+                <div class="content1">
+                    <div class="title1">รางวัลรองชนะเลิศอันดับที่ 2</div>
+                    <div class="sub-title1">การประกวดวาดภาพโปรเตอร์ ในหัวข้อ ร่วมมือ ร่วมใจ ก้าวไกล ยั่งยืน</div>
+                    <div class="bottom1">
+                        <p>เนื่องในวันสัปดาห์อาเซียน ปีการศึกษา 2562 วันที่ 8 สิงหาคม พ.ศ.2562 ณ นวมินทราชินูทิศ เบญจมราชาลัย</p>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------------------------- -->
+
+        </div>
+    
+            <!-- computer -->
+            <div class="imgbox" data-item="computer">
+                <div class="card">
+                    <div class="image">
+                        <img src="certificate/04.jpg">
+                    </div>
+                    <div class="content3">
+                        <div class="sub-title3">เข้าร่วมการประกวดออกเเบบกราฟิกบนถุงผ้าลดโลกร้อน <br>โครงการ YOUNG PRINTING & PACKAGING DESIGNER 2019</div>
+                        <div class="bottom3">
+                            <p>ในกิจกรรมวันสถาปนามหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี ประจำปี 2562 ณ วันที่ 4 - 6 กรกฎาคม พ.ศ.2562</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/เซต.jpg">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">เข้าร่วมการเเข่งขันโครงงานคณิตศาสตร์ เรื่อง ตู้เซตหมุนติ้ว</div>
+                        <div class="bottom2">
+                            <p>วันที่ 8 สิงหาคม พ.ศ.2562 ณ โรงเรียนนวมินทราชินูทิศ เบญจมราชาลัย</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/ถั่วงอก.jpg">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">จัดทำโครงงานวิทยาศาสตร์ เรื่อง ถั่วงอกสร้างอาชีพ</div>
+                        <div class="bottom2">
+                            <p>วันวิทยาศาสตร์แห่งชาติ วันที่ 22 สิงหาคม พ.ศ.2562 ณ โรงเรียนนวมินทราชินูทิศ เบญจมราชาลัย</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/Tech Tomorrow.jpeg">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">เข้าร่วมการอบรมหลักสูตร ARTIFICIAL INTELLIGENT 101</div>
+                        <div class="bottom2">
+                            <p>ในงาน Tech Tomorrow 2020 วันที่ 1 กุมภาพันธ์ พ.ศ.2563 ณ มหาวิทยาลัยกรุงเทพ</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/18073.jpg">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">จัดทำโครงงานคอมพิวเตอร์ เรื่อง การสร้างสรรค์ฟิลเตอร์ Instagram</div>
+                        <div class="bottom2">
+                            <p>ดิฉันได้มีส่วนร่วมของโครงงานในการจัดทำฟิลเตอร์ Instagram เรื่อง สำนวนภาษาอังกฤษ เป็นมินิเกมเล็กๆ ให้ความสนุก เเละความรู้ไปในตัว</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/open.jpg">
+                    </div>
+                    <div class="content3">
+                        <div class="sub-title3">เข้าร่วม Interactive Media Makey Makey Workshop การสร้างสรรค์นวัตกรรมผ่านสื่อมัลติมีเดีย</div>
+                        <div class="bottom3">
+                            <p>ได้สร้างเกมผ่านโปรเเกรม Unity เเละควบคุมเกมโดยใช้บอร์ด Makey Makey เชื่อมต่อกับผลไม้นำไฟฟ้า
+                            ในงาน Open House วันที่ 28 พฤศจิกายน พ.ศ.2563 ณ มหาวิทยาลัยกรุงเทพ</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/ไทย-ญี่ปุ่น.jpg">
+                    </div>
+                    <div class="content3">
+                        <div class="sub-title3">เข้าร่วมโครงการ INNOVATOR JOURNEY WORKSHOP :: THE SERIES ครั้งที่ 2</div>
+                        <div class="bottom3">
+                            <p>ทำกิจกรรม Board Game Workshop ที่จำลองสถานการณ์ธุรกิจนวัตกรรมผ่านบอร์ดเกม ให้เราได้จัดการกับธุรกิจของตัวเองโดยใช้แนวคิด Lean Startup 
+                            เข้าร่วมวันที่ 28 ธันวาคม พ.ศ.2563 ณ สถาบันไทย-ญี่ปุ่น</p>
+                        </div>
+                        <div class="btn-read">
+                            <button onclick="togglePopup17()">ภาพกิจกรรม</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-17">
+                    <div class="overlay"></div>
+                    <div class="read-box">
+                        <div class="close-btn" onclick="togglePopup17()">&times;</div>
+                        <div class="slidershow middle">
+                            <div class="slides">
+                                <input type="radio" name="r" id="r9" checked>
+                                <input type="radio" name="r" id="r10">
+                                <input type="radio" name="r" id="r11">
+                                <input type="radio" name="r" id="r12">
+                
+                                <div class="slide s3">
+                                    <img src="activity/com/ไทย-ญี่ปุ่น1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/ไทย-ญี่ปุ่น2.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/ไทย-ญี่ปุ่น3.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/ไทย-ญี่ปุ่น4.jpg">
+                                </div>
+                            </div>
+                
+                            <div class="navigation">
+                                <label for="r9" class="bar"></label>
+                                <label for="r10" class="bar"></label>
+                                <label for="r11" class="bar"></label>
+                                <label for="r12" class="bar"></label>
+                            </div>     
+                       </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/สอวน.jpg">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">เข้าร่วมการเเข่งขันโอลิมปิกวิชาการ สอวน.คอมพิวเตอร์</div>
+                        <div class="bottom2">
+                            <p>ปีการศึกษา 2563 วันที่ 20 มกราคม พ.ศ.2564 ณ โรงเรียนเตรียมอุดมศึกษาพัฒนาการ</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/Aidea-Workshop-1200-1.jpg">
+                    </div>
+                    <div class="content3">
+                        <div class="sub-title3">เข้าร่วมโครงการ Aidea Workshop 2021 ปัญญาประดิษฐ์เบื้องต้นสำหรับคน Gen Z</div>
+                        <div class="bottom3">
+                            <p>วันที่ 26 พฤษภาคม, 3 มิถุนายน เเละ 5 มิถุนายน พ.ศ.2564 จัดโดยสถาบัน Aidea Thailand</p>
+                        </div>
+                        <div class="btn-read">
+                            <button onclick="togglePopup18()">ภาพกิจกรรม</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-18">
+                    <div class="overlay"></div>
+                    <div class="read-box">
+                        <div class="close-btn" onclick="togglePopup18()">&times;</div>
+                        <div class="slidershow middle">
+                            <div class="slides">
+                                <input type="radio" name="r" id="r17" checked>
+                                <input type="radio" name="r" id="r18">
+                                <input type="radio" name="r" id="r19">
+                                <input type="radio" name="r" id="r20">
+                
+                                <div class="slide s5">
+                                    <img src="activity/com/aidea.JPG">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/aidea1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/aidea3.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/aidea3.png">
+                                </div>
+                            </div>
+                
+                            <div class="navigation">
+                                <label for="r17" class="bar"></label>
+                                <label for="r18" class="bar"></label>
+                                <label for="r19" class="bar"></label>
+                                <label for="r20" class="bar"></label>
+                            </div>     
+                       </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/cesca-1200.jpg">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">เข้าร่วมค่ายเยาวชนวิศวกรรมคอมพิวเตอร์ครั้งที่ 16 (CESCa)</div>
+                        <div class="bottom2">
+                            <p>วันที่ 29 เมษายน - 2 พฤษภาคม พ.ศ.2564 จัดโดยสาขาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยขอนแก่น</p>
+                        </div>
+                        <div class="btn-read">
+                            <button onclick="togglePopup19()">ภาพกิจกรรม</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-19">
+                    <div class="overlay"></div>
+                    <div class="read-box">
+                        <div class="close-btn" onclick="togglePopup19()">&times;</div>
+                        <div class="slidershow middle">
+                            <div class="slides">
+                                <input type="radio" name="r" id="r21" checked>
+                                <input type="radio" name="r" id="r22">
+                                <input type="radio" name="r" id="r23">
+                                <input type="radio" name="r" id="r24">
+                
+                                <div class="slide s6">
+                                    <img src="activity/com/cesca.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/cesca1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/cesca2.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/cesca3.jpg">
+                                </div>
+                            </div>
+                
+                            <div class="navigation">
+                                <label for="r21" class="bar"></label>
+                                <label for="r22" class="bar"></label>
+                                <label for="r23" class="bar"></label>
+                                <label for="r24" class="bar"></label>
+                            </div>     
+                       </div>
+                       <div class="btn-read">
+                        <a href="https://jirawat-rackz.github.io/web_cesca_playground/Project/HTML1/index.html" target="_blank"><button class="btn"
+                                type="button" name="button">รับชมผลงาน</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/cscamp-1200.jpg">
+                    </div>
+                    <div class="content3">
+                        <div class="sub-title3">เข้าร่วมค่ายฝึกอบรมออนไลน์เชิงปฎิบัติการวิทยาการคอมพิวเตอร์ <br>ครั้งที่ 13 (CSCamp)</div>
+                        <div class="bottom3">
+                            <p>วันที่ 29 มิถุนายน - 3 กรกฎาคม พ.ศ.2564 จัดโดยภาควิชาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+                        </div>
+                        <div class="btn-read">
+                            <button onclick="togglePopup20()">ภาพกิจกรรม</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-20">
+                    <div class="overlay"></div>
+                    <div class="read-box">
+                        <div class="close-btn" onclick="togglePopup20()">&times;</div>
+                        <div class="slidershow middle">
+                            <div class="slides">
+                                <input type="radio" name="r" id="r25" checked>
+                                <input type="radio" name="r" id="r26">
+                                <input type="radio" name="r" id="r27">
+                                <input type="radio" name="r" id="r28">
+                
+                                <div class="slide s7">
+                                    <img src="activity/com/cs.jpeg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/cs1.jpeg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/cs2.jpeg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/com/cs3.jpeg">
+                                </div>
+                            </div>
+                
+                            <div class="navigation">
+                                <label for="r25" class="bar"></label>
+                                <label for="r26" class="bar"></label>
+                                <label for="r27" class="bar"></label>
+                                <label for="r28" class="bar"></label>
+                            </div>     
+                       </div>
+                       <div class="btn-read">
+                        <a href="https://makecode.microbit.org/23535-07927-34058-04557" target="_blank"><button class="btn"
+                                type="button" name="button">รับชมผลงาน</button></a>
+                    </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/com/ham.jpg">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">เข้าร่วมค่าย Data science with python</div>
+                        <div class="bottom2">
+                            <p>วันที่ 6 - 9 กรกฎาคม พ.ศ.2564 จัดโดยสถาบัน Hamster Hub</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+            </div>
+
+            <!-- Volunteer -->
+            <div class="imgbox" data-item="volunteer">
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/volunteer/1.jpg">
+                    </div>
+                    <div class="content3">
+                        <div class="sub-title3">เป็นตัวเเทนนักเรียนรับหน้าที่เป็นจิตอาสาพิธีเพลิงพระศพพระสุวรรณเขมากร (ประยูร สุภปญโญ)</div>
+                        <div class="bottom3">
+                            <p>ปีการศึกษา 2563 วันที่ 14 มีนาคม พ.ศ.2563 ณ วัดเเป้นทองโสภาราม</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/volunteer/2.jpeg">
+                    </div>
+                    <div class="content3">
+                        <div class="sub-title3">เป็นตัวเเทนนักเรียนรับหน้าที่เป็นจิตอาสาทำโล่รางวัลให้กับนักวิ่ง<br>ในงานบึงหระยามินิมาราธอน ครั้งที่ 4</div>
+                        <div class="bottom3">
+                            <p>ปีการศึกษา 2563 วันที่ 10 เมษายน พ.ศ.2563 ณ โรงเรียนนวมินมราชินูทิศ เบญจมราชาลัย</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/volunteer/3.jpg">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">เป็นตัวเเทนนักเรียนรับหน้าที่เป็นช่างภาพจิตอาสาในค่ายคุณธรรม</div>
+                        <div class="bottom2">
+                            <p>ปีการศึกษา 2562 วันที่ 3 - 5 กันยายน พ.ศ.2562 ณ มหาวิทยาลัยจุฬาลงกรณราชวิทยาลัย</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/volunteer/4.JPG">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">เข้าร่วมอบรมคุณธรรม จริยธรรม เพื่อพัฒนาคุณภาพชีวิต</div>
+                        <div class="bottom2">
+                            <p>ปีการศึกษา 2562 วันที่ 3 - 5 กันยายน พ.ศ.2562 ณ มหาวิทยาลัยจุฬาลงกรณราชวิทยาลัย</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+            </div>
+
+            <!-- music -->
+            <div class="imgbox" data-item="music">
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/music/nbr.jpg">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">เข้าร่วมการประกวดเเข่งขันดนตรี NBR Music Award ครั้งที่ 8</div>
+                        <div class="bottom2">
+                            <p>ปีการศึกษา 2562 วันที่ 28 พฤศจิกายน พ.ศ.2562 ณ โรงเรียนนวมินทราชินูทิศ เบญจมราชาลัย</p>
+                        </div>
+                        <div class="btn-read">
+                            <button onclick="togglePopup21()">ภาพกิจกรรม</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-21">
+                    <div class="overlay"></div>
+                    <div class="read-box">
+                        <div class="close-btn" onclick="togglePopup21()">&times;</div>
+                        <div class="slidershow middle">
+                            <div class="slides">
+                                <input type="radio" name="r" id="r29" checked>
+                                <input type="radio" name="r" id="r30">
+                                <input type="radio" name="r" id="r31">
+                                <input type="radio" name="r" id="r32">
+                
+                                <div class="slide s8">
+                                    <img src="activity/music/nbr1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/music/nbr2.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/music/nbr3.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/music/nbr4.jpg">
+                                </div>
+                            </div>
+                
+                            <div class="navigation">
+                                <label for="r29" class="bar"></label>
+                                <label for="r30" class="bar"></label>
+                                <label for="r31" class="bar"></label>
+                                <label for="r32" class="bar"></label>
+                            </div>     
+                       </div>
+                       <div class="btn-read">
+                        <a href="https://www.youtube.com/watch?v=q-gfncIlkfs" target="_blank"><button class="btn"
+                                type="button" name="button">รับชมการเเสดงดนตรี</button></a>
+                    </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                <div class="card">
+                    <div class="image">
+                        <img src="activity/music/วงโย.jpg">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">เป็นสมาชิกวงโยธวาทิตโรงเรียนนวมินทราชินูทิศ เบญจมราชาลัย</div>
+                        <div class="bottom2">
+                            <p>เล่นเครื่องดนตรี : คลาริเน็ต (Part Woodwind) <br>ดิฉันได้เล่นดนตรีประกอบงานพิธีต่างๆ ภายในโรงเรียน ตั้งเเต่ปีการศึกษา 2560 ถึง 2565</p>
+                        </div>
+                        <div class="btn-read">
+                            <button onclick="togglePopup22()">ภาพกิจกรรม</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup-22">
+                    <div class="overlay"></div>
+                    <div class="read-box">
+                        <div class="close-btn" onclick="togglePopup22()">&times;</div>
+                        <div class="slidershow middle">
+                            <div class="slides">
+                                <input type="radio" name="r" id="r33" checked>
+                                <input type="radio" name="r" id="r34">
+                                <input type="radio" name="r" id="r35">
+                                <input type="radio" name="r" id="r36">
+                
+                                <div class="slide s9">
+                                    <img src="activity/music/วงโย1.JPG">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/music/เกษียณ.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/music/วงโย2.JPG">
+                                </div>
+                                <div class="slide">
+                                    <img src="activity/music/วงโย4.jpg">
+                                </div>
+                            </div>
+                
+                            <div class="navigation">
+                                <label for="r33" class="bar"></label>
+                                <label for="r34" class="bar"></label>
+                                <label for="r35" class="bar"></label>
+                                <label for="r36" class="bar"></label>
+                            </div>     
+                       </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+                 <div class="card">
+                    <div class="image">
+                        <img src="activity/music/เเห่.JPG">
+                    </div>
+                    <div class="content2">
+                        <div class="sub-title2">เล่นดนตรีงานเเห่เทียนเข้าพรรษา</div>
+                        <div class="bottom2">
+                            <p>วันที่ 11 กรกฎาคม พ.ศ.2562 ณ วัดพระยาสุเรนทร์</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------------------------------------------------------------------------------- -->
+            </div>
+
+    </section>
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/work.js"></script>
+    <script src="javascript/scroll.js"></script>
+</body>
+
+</html>

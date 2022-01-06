@@ -1,0 +1,232 @@
+
+ .slidershow{
+    width: 800px; 
+    overflow: hidden;
+    position: relative;
+}
+.middle{
+    position: relative;
+    padding: 10px;
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 50px;
+    height: 15px;
+    border: 2px solid rgb(116, 116, 116);
+    margin: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-out;
+    background-color: rgb(255, 255, 255);
+}
+.bar:hover{
+    background: rgb(116, 116, 116);
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    padding: 10px;
+    border: 3px solid #ccc;
+    width: 450%;
+    height: 100%;
+    display: flex;
+}
+.slide{
+    width: 25%;
+    transition: 0.6s;
+}
+.slide img{
+    width: fit-content;
+    width: 90%;
+    height: fit-content;
+}
+#r1:checked ~ .s1{
+    margin-left: -1.5%;
+}
+#r2:checked ~ .s1{
+    margin-left: -26.5%;
+}
+#r3:checked ~ .s1{
+    margin-left: -51.5%;
+}
+#r4:checked ~ .s1{
+    margin-left: -76.5%;
+}
+
+/* ------------------------------------------------------------------ */
+
+#r5:checked ~ .s2{
+    margin-left: -1.5%;
+}
+#r6:checked ~ .s2{
+    margin-left: -26.5%;
+}
+#r7:checked ~ .s2{
+    margin-left: -51.5%;
+}
+#r8:checked ~ .s2{
+    margin-left: -76.5%;
+}
+
+/* ------------------------------------------------------------------ */
+
+#r9:checked ~ .s3{
+    margin-left: -1.5%;
+}
+#r10:checked ~ .s3{
+    margin-left: -26.5%;
+}
+#r11:checked ~ .s3{
+    margin-left: -51.5%;
+}
+#r12:checked ~ .s3{
+    margin-left: -76.5%;
+}
+
+/* ------------------------------------------------------------------ */
+
+#r13:checked ~ .s4{
+    margin-left: -1.5%;
+}
+#r14:checked ~ .s4{
+    margin-left: -26.5%;
+}
+#r15:checked ~ .s4{
+    margin-left: -51.5%;
+}
+#r16:checked ~ .s4{
+    margin-left: -76.5%;
+}
+
+/* ------------------------------------------------------------------ */
+
+#r17:checked ~ .s5{
+    margin-left: -1.5%;
+}
+#r18:checked ~ .s5{
+    margin-left: -26.5%;
+}
+#r19:checked ~ .s5{
+    margin-left: -51.5%;
+}
+#r20:checked ~ .s5{
+    margin-left: -76.5%;
+}
+
+/* ------------------------------------------------------------------ */
+
+#r21:checked ~ .s6{
+    margin-left: -1.5%;
+}
+#r22:checked ~ .s6{
+    margin-left: -26.5%;
+}
+#r23:checked ~ .s6{
+    margin-left: -51.5%;
+}
+#r24:checked ~ .s6{
+    margin-left: -76.5%;
+}
+
+/* ------------------------------------------------------------------ */
+
+#r25:checked ~ .s7{
+    margin-left: -1.5%;
+}
+#r26:checked ~ .s7{
+    margin-left: -26.5%;
+}
+#r27:checked ~ .s7{
+    margin-left: -51.5%;
+}
+#r28:checked ~ .s7{
+    margin-left: -76.5%;
+}
+
+/* ------------------------------------------------------------------ */
+
+#r29:checked ~ .s8{
+    margin-left: -1.5%;
+}
+#r30:checked ~ .s8{
+    margin-left: -26.5%;
+}
+#r31:checked ~ .s8{
+    margin-left: -51.5%;
+}
+#r32:checked ~ .s8{
+    margin-left: -76.5%;
+}
+
+/* ------------------------------------------------------------------ */
+
+#r33:checked ~ .s9{
+    margin-left: -1.5%;
+}
+#r34:checked ~ .s9{
+    margin-left: -26.5%;
+}
+#r35:checked ~ .s9{
+    margin-left: -51.5%;
+}
+#r36:checked ~ .s9{
+    margin-left: -76.5%;
+}
+
+@media only screen and (max-width: 600px) {
+    #slider {
+        margin: 0 auto;
+        width: fit-content;
+        text-align: center;
+     }
+     #slides .slide {
+        width: 25%;
+        float:left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: #fff;
+     }
+     #slides .inner {
+        transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+        width: 400%;
+        line-height: 0;
+        height: 100%;
+     }
+     .slide-content img{
+        width: fit-content;
+        width: 100%;
+        height: 100%;
+     }
+
+     .slidershow{
+        width: 100%; 
+        overflow: hidden;
+        position: relative;
+    }
+    .slides1{
+        padding: 10px;
+        border: 3px solid #ccc;
+        width: 450%;
+        height: 100%;
+        display: flex;
+        z-index: 1;
+    }
+    .slide1{
+        width: 25%;
+        transition: 0.6s;
+    }
+    .slide1 img{
+        width: fit-content;
+        width: 100%;
+        height: 100%;
+    }
+}

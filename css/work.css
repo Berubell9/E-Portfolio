@@ -2,33 +2,42 @@
 	width: 100%;
 	height: 100%;
     padding-bottom: 20px;
-	background-color : #444b69;
+	background-color : #f9f9f9;
 }
 .four h1{
-	padding-top: 30px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 2rem;
-    font-weight: bold;
-    text-shadow: -1px 3px #313131, 3px 3.5px #313131, -1px -1.5px #313131, 3.5px 0px #313131;
-    color: #fbcf3a;
-    letter-spacing: 1.5px;
-    font-family: 'rd_chulajaruekregular';
-}
-.four h2{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-shadow: -1px 3px #313131, 3px 3.5px #313131, -1px -1.5px #313131, 3.5px 0px #313131;
-    color: #fbcf3a;
-    letter-spacing: 2px;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.5s;
     font-family: 'VT323', monospace;
- }
+    padding-top: 20px;
+    text-align: center;
+}
+.four h1 span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #313131;
+    color: #f9f9f9;
+    transition: 1s;
+    transform: rotateY(0);
+    text-align: center;
+    padding: 10px ;
+    font-size: 30px;
+}
+.four h1:hover span{
+    transform: rotateY(360deg);
+}
+.four h1 span:nth-child(1){
+    transition-delay: .6s;
+}
+.four h1 span:nth-child(2){
+    transition-delay: .4s;
+}
+.four h1 span:nth-child(3){
+    transition-delay: .4s;
+}
 .box-list{
-	font-size: 15pt;
+	font-size: 15px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -43,9 +52,9 @@
 	flex-wrap: wrap;
 }
 .box-list ul li.active{
-    background: #fbcf3a;
-    box-shadow: 0px 0px #fff, 5px 4px #ddb22f, 0px 0px #fff, 4px 4px #ddb22f;
-    border: 2px solid #fbcf3a;
+    color:#fff;
+    background: #313131;
+    box-shadow: -4px 0px #636363, 0px 4px #000, 0px -4px #636363, 4px 0px #000 ;
 }
 .box-list ul li{
 	list-style: none;
@@ -54,8 +63,7 @@
 	padding: 5px 7px;
 	margin: 14px;
 	cursor: pointer;
-	font-weight: 500;
-	font-family: 'VT323', monospace;
+	font-weight: bold;
 }
 .card .btn-read {
     margin: 10px 0px;
@@ -112,7 +120,7 @@
     display: none;
 }
 .imgbox{
-    padding: 0 40px;
+    padding: 0 55px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -124,10 +132,9 @@
     height: fit-content;
     max-width: 300px;
     margin: 12px 20px;
-    border: 1px solid #313131;
-    box-shadow: 0px 0px #000000, 6px 6px #000000, 0px 0px #000000, 6px 6px #000000;
     background: #fff;
     transition: 0.5s;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.20);
 }
 .card:hover{
      transform: translatey(-5px);
@@ -146,12 +153,12 @@
     padding: 5px;
 }
 .card .top-text .join{
-    font-size: 13pt;
+    font-size: 15px;
     font-weight: bolder;
     color: #313131;
 }
 .card .top-text p{
-    font-size: 11pt;
+    font-size: 15px;
     font-weight: 500;
     color: #313131;
     line-height: 20px;
@@ -174,7 +181,7 @@
     display: none;
 }
 .popup .read-box{
-    border-radius: 15px;    
+    border-radius: 10px;    
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
@@ -224,7 +231,7 @@
     height: 320px;
 }
 .popup .microbit img{
-    width: 700px;
+    width: 750px;
     height: 360px;
 }
 .popup .read-box .discord img{
@@ -274,17 +281,147 @@
     color: #313131;
     padding: 15px;
 }
-@media screen and (max-width: 978px){
+.video{
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+    padding: 5px;
+}
+
+ /* ----------------------------------------------------------- */
+ 
+
+@media only screen and (max-width: 600px) {
+    .four h1{
+        position: static;
+        transition: 0.5s;
+        font-family: 'VT323', monospace;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .four h1 span{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: #313131;
+        color: #f9f9f9;
+        transition: 1s;
+        transform: rotateY(0);
+        text-align: center;
+        padding: 5px ;
+        font-size: 30px;
+    }
     .imgbox{
         flex-wrap: wrap;
-        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px;
     }
-    .card{
-        max-width: 500px;
+    .imgbox .card{
+        max-width: 700px;
         margin: 10px 0;
     }
     .card1{
         max-width: 500px;
         margin: 10px 0;
     }
+    .popup{
+        position: fixed;
+        z-index: 1100;
+        width:100%;
+    }
+    .popup .read-box{
+        font-size: 9px;
+        border-radius: 10px;    
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(0);
+        background: #fff;
+        width: fit-content;
+        height: fit-content;
+        z-index: 12000;
+        text-align: center;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .read-box h3{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .popup img{
+        width: 200px;
+        height: 155px;
+    }
+    .popup .microbit img{
+        width: 270px;
+        height: 150px;
+    }
+    .popup .read-box .discord img{
+        width: 180px;
+        height: 150px;
+    }
+    .popup .close-btn{
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        background: #313131;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+        box-shadow: -4px 0px #636363, 0px 4px #000, 0px -4px #636363, 4px 0px #000;
+    }
+    .btn-read button{
+        font-family: 'Kanit', sans-serif;
+        font-weight: 1000;
+        font-size: 13px;
+        color: #492E36;
+        padding: 0.1rem 0.3rem;
+        background: #fbcf3a;
+        border: 3px solid #f8e48f;
+        box-shadow: -4px 0px #f8e48f, 0px 4px #ddb22f, 0px -4px #f8e48f, 4px 0px #ddb22f;
+        transform-style: preserve-3d;
+        transition: background 150ms cubic-bezier(0,0,0.58,1);
+        transition: transform 150ms cubic-bezier(0,0,0.58,1), background 150ms cubic-bezier(0,0,0.58,1);
+        transition: transform 150ms cubic-bezier(0,0,0.58,1), background 150ms cubic-bezier(0,0,0.58,1);
+    }
+    .video{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 150px;
+    }
+    .box-list{
+        font-size: 12px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .box-list ul li{
+        list-style: none;
+        box-shadow: -4px 0px #f8e48f, 0px 4px #ddb22f, 0px -4px #f8e48f, 4px 0px #ddb22f ;
+        background: #fbcf3a;
+        padding: 5px 7px;
+        margin: 6px;
+        cursor: pointer;
+        font-weight: bolder;
+    }
+    .imgbox .card1 .top-text1 p {
+        font-size: 14px;
+        font-weight: bolder;
+        color: #313131;
+        padding: 10px;
+    }
+    
 }
