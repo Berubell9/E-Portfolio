@@ -1,6 +1,6 @@
 .two{
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.30)), url(/images/bg2.png); 
+    background-image: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)), url(/images/bg2.png); 
     width: 100%;
     height: 100vh;
     display: flex;
@@ -10,32 +10,81 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-sizing: border-box;
  }
- .two .photo2{
-    top: 150px;
-     position:absolute;
-     display: flex;
-     width: 500px;
-     height:400px;
-     left: 7%;
+ .container{
+    width: 1060px;
+ }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.photo img{
+    width: fit-content;
+    height: 60vh;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+}
+.about{
+    position: relative;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 0px #313131, 6px 6px #313131, 0px 0px #313131, 6px 6px #313131;
+}
+.about > *{
+    margin-bottom: 0.5rem;
+    color: black;
 
- }
- .two .photo2 img{
-     width: 100%;
-     height: 100%;
-     object-fit: contain;
- }
- .about p{
-     position: absolute;
-     left: 82vh;
-     top: 250px;
-     font-family: 'Kanit', sans-serif;
-     font-size: 11pt;
-     font-weight: bold;
-     letter-spacing: 0.5px;
-     padding: 20px;
-     text-indent: 0.5cm;
-     background-color: #f9f9ff;
-     box-shadow: 0px 0px #d4d4d4, 8px 8px #313131, 0px 0px #d4d4d4, 8px 8px #313131;
-     background: #fff;
- }
+}
+.about p{
+    color: black;
+    text-indent: 0.5cm;
+}
+.about p span{
+    font-weight: bolder;
+    color: #DB4A73;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid{
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+    .photo{
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .photo img{
+        padding-top: 60px;
+        max-width: 80%;
+        height: 50%;
+    }
+    .about{
+        background-color: white; 
+        box-shadow: 0px 0px #313131, 6px 6px #313131, 0px 0px #313131, 6px 6px #313131;
+    }
+    .about h3{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    .about p{
+        color: black;
+        font-size: 13px;
+    }
+    .two{
+    height: 100%;
+    padding-bottom: 20px;
+    }
+}
